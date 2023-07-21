@@ -1,14 +1,16 @@
 # Duplicated Signature Issue Reproduction Project
 
-Since first version of Xcode 15, and even with the latest beta 4, when a project that contains 
+Since first version of Xcode 15, and even with the latest beta 4, when a project that contains
+a reference into a `.xcframework` binaryTarget is archived, the following error appears, blocking the release process:
 
 ```
 “Lottie.xcframework.signature” couldn’t be copied to “Signatures” because an item with the same name already exists.
 ```
 
 ## Setup
+
 - Cocoapods based project
-- Local Swift Package (`libraries` directory)
+- Local Swift Package (`libraries` directory) with a binary example dependency (Lottie, but it could be any other one)
 - Development Pod with a Swift Package Manager local dependency
 - Xcode 15
 - Cocoapods 1.12.1
@@ -27,5 +29,5 @@ Since first version of Xcode 15, and even with the latest beta 4, when a project
     ![failure screenshot](failure.png)
 
 
-However, if you choose `MyFramework` scheme and repeat the same steps the problem is not reproducible. And both targets contains the same SPM binary dependency (Lottie).
+However, if you choose `MyFramework` scheme and repeat the same steps the problem is not reproducible, when both targets contain the same SPM binary dependency (Lottie).
 
