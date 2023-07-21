@@ -6,8 +6,7 @@ a reference into a `.xcframework` binaryTarget is archived, the following error 
 
 > “Lottie.xcframework.signature” couldn’t be copied to “Signatures” because an item with the same name already exists.
 
-
-## Xcode project Setup
+##  Xcode project Setup
 
 - Cocoapods based project
 - Local Swift Package (`libraries` directory) with a binary example dependency (Lottie, but it could be any other one)
