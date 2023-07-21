@@ -1,7 +1,7 @@
 # Duplicated Signature Issue Reproduction Project
 
 Since first version of Xcode 15, and even with the latest beta 4, when a project that contains
-a reference into a `.xcframework` binaryTarget is archived, the following error appears, blocking the release process:
+a reference into a `.xcframework` binaryTarget is archived, the [following error](https://developer.apple.com/forums/thread/733461?page=1#759587022) appears, blocking the release process:
 
 
 > “Lottie.xcframework.signature” couldn’t be copied to “Signatures” because an item with the same name already exists.
