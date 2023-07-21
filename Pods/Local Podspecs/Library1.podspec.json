@@ -1,0 +1,17 @@
+{
+  "name": "Library1",
+  "version": "1.0.0",
+  "authors": "XING GmbH & Co. KG",
+  "license": "commercial",
+  "homepage": "https://github.com/xingmobile/ios-app/tree/main/libraries/Library1/",
+  "source": {
+    "git": "https://github.com/xingmobile/ios-app.git"
+  },
+  "summary": "Library1 – Version 1.0.0",
+  "platforms": {
+    "ios": "15.0"
+  },
+  "swift_versions": "5.7",
+  "source_files": "Library1/**/*.swift",
+  "swift_version": "5.7"
+}

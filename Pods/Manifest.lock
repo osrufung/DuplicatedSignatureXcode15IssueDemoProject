@@ -1,0 +1,16 @@
+PODS:
+  - Library1 (1.0.0)
+
+DEPENDENCIES:
+  - Library1 (from `podsLibraries/Library1`)
+
+EXTERNAL SOURCES:
+  Library1:
+    :path: podsLibraries/Library1
+
+SPEC CHECKSUMS:
+  Library1: 477f14a482ff63ef200c06a6d98e93bae79d8712
+
+PODFILE CHECKSUM: b08b5e70404611ab1b86418c0f96e6e48ddb7a6b
+
+COCOAPODS: 1.12.1
